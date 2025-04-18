@@ -1,4 +1,3 @@
-
 import Navigation from "../components/Navigation";
 import ProjectCard from "../components/ProjectCard";
 import { Github, Linkedin, Mail } from "lucide-react";
@@ -130,7 +129,7 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-12">Get In Touch</h2>
           <div className="flex justify-center space-x-8">
             <a
-              href="https://github.com"
+              href="https://github.com/piyushgirisingh"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-blue-500 transition-colors"
@@ -138,7 +137,7 @@ const Index = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/piyushsingh469/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-blue-500 transition-colors"
