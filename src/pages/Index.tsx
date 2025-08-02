@@ -5,22 +5,34 @@ import { Github, Linkedin, Mail } from "lucide-react";
 const Index = () => {
   const projects = [
     {
-      title: "Project One",
-      description: "A brief description of your first project and its key features.",
-      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      link: "#",
+      title: "GeminiAlert",
+      description: "Python, Flask, Firebase, Gemini API - Built a prototype emergency alert web app using Gemini API to deliver AI-generated safety guidance during natural disasters and fire drills.",
+      technologies: ["Python", "Flask", "Firebase", "Gemini API"],
+      features: [
+        "Simulated 10 emergency scenarios; average response time measured at ~1.2 seconds via Flask backend",
+        "Used role-based mock data to simulate alert routing logic for responders and civilians",
+        "Integrated Firebase for authentication and location tracking during alert testing"
+      ]
     },
     {
-      title: "Project Two",
-      description: "Description of your second project highlighting its unique aspects.",
-      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-      link: "#",
+      title: "WhiteCoatAI",
+      description: "Python, Streamlit, MongoDB, Gemini API - Collaborated with 3 teammates on a tool to simplify and summarize medical documents (PDF/TXT) using Gemini.",
+      technologies: ["Python", "Streamlit", "MongoDB", "Gemini API"],
+      features: [
+        "Tested with 25+ documents; summaries compared against 5 expert-written samples and reviewed for readability, medical accuracy and key term preservation",
+        "Achieved estimated average ROUGE-L score of 0.72 on internal test set",
+        "Integrated MongoDB for searchable history and Q&A session logging"
+      ]
     },
     {
-      title: "Project Three",
-      description: "Overview of your third project showcasing your skills.",
-      imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      link: "#",
+      title: "HealthCost AI Predictor",
+      description: "Python, Streamlit, scikit-learn - Built a healthcare cost prediction app using a public CMS dataset (~1,300 records).",
+      technologies: ["Python", "Streamlit", "scikit-learn"],
+      features: [
+        "Trained a Random Forest model with an R² score of 0.81 and average prediction error of ±$2,500",
+        "Designed a Streamlit UI that highlights cost breakdowns based on user input (e.g., age, BMI, smoking)",
+        "App tested with 10 users and updated based on feedback, resulting in a 20% faster input flow after reducing clicks and simplifying layout"
+      ]
     },
   ];
 
@@ -66,19 +78,11 @@ const Index = () => {
             <div className="space-y-6">
               <div>
                 <h4 className="text-xl font-medium">University of Texas at Arlington | Arlington, TX</h4>
-                <p className="text-gray-600">Bachelors of Science in Computer Science | Expected: 05/2026</p>
-                <p className="text-gray-600 mt-2">Relevant Coursework: Data Structure and Algorithms, Database Systems, Object-Oriented Programming, Artificial Intelligence, Computer Vision, Operating Systems</p>
-                <p className="text-gray-600">Student Organizations: ACM-UTA, Nepalese Student Association at UTA, CSEC-UTA</p>
+                <p className="text-gray-600">Bachelor of Science in Computer Science | Aug. 2024 – May 2026</p>
               </div>
               <div>
                 <h4 className="text-xl font-medium">Dallas College | Dallas, TX</h4>
-                <p className="text-gray-600">Computer Science | 07/2024</p>
-                <ul className="list-disc list-inside text-gray-600 mt-2">
-                  <li>Chancellor's Honors Roll</li>
-                  <li>STEM League</li>
-                  <li>International Club</li>
-                  <li>Phi Theta Kappa (ΦΘK)</li>
-                </ul>
+                <p className="text-gray-600">Associates of Science in Computer Science | Aug. 2022 – July 2024</p>
               </div>
             </div>
           </div>
@@ -88,36 +92,64 @@ const Index = () => {
             <h3 className="text-2xl font-semibold mb-6">Experience</h3>
             <div className="space-y-6">
               <div>
-                <h4 className="text-xl font-medium">OURCS@DFW | Arlington, TX</h4>
-                <p className="text-gray-600">Researcher | 02/2025</p>
+                <h4 className="text-xl font-medium">Undergraduate Researcher</h4>
+                <p className="text-gray-600 font-medium">OURCS@DFW | Feb. 2025</p>
                 <ul className="list-disc list-inside text-gray-600 mt-2">
                   <li>Researched the robustness of text summarization models by applying adversarial attacks and analyzing their impact using Hugging Face and ROUGE scores.</li>
                   <li>Explored AI security vulnerabilities and model evaluation techniques to assess reliability and performance.</li>
-                  <li>Developed insights on optimizing model performance by identifying weaknesses in summarization algorithms.</li>
+                  <li>Recommended improvements to prompt templates after observing a 10-15% drop in ROUGE recall on adversarial samples.</li>
                 </ul>
               </div>
               <div>
-                <h4 className="text-xl font-medium">City of Irving | Irving, TX</h4>
-                <p className="text-gray-600">Project Intern | 09/2023 - 12/2023</p>
+                <h4 className="text-xl font-medium">Data Analytics Intern</h4>
+                <p className="text-gray-600 font-medium">City of Irving | Sep. 2023 – Dec. 2023</p>
                 <ul className="list-disc list-inside text-gray-600 mt-2">
-                  <li>Encouraged new economic development and businesses while also providing an enhanced quality of life for residents and visitors.</li>
-                  <li>Demonstrated the ability to work independently as well as part of a team environment.</li>
-                  <li>Learned techniques for effective project management including budgeting, scheduling and resource allocation.</li>
-                  <li>Utilized problem-solving skills to identify potential risks and develop mitigation strategies.</li>
+                  <li>Contributed to a smart redevelopment plan for Irving Mall aimed at revitalizing a 1M+ sq. ft. retail space using technology-driven improvements.</li>
+                  <li>Proposed 4 key solutions including smart parking sensors, interactive kiosks and footfall analytics using IoT to enhance visitor experience.</li>
+                  <li>Collaborated with a 4-member team; used Trello and agile methods to reduce restroom downtime by 15-20% based on benchmarks from similar city installations using occupancy sensors and Power BI.</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          {/* Skills & Languages */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
-              <p className="text-gray-600">Java, C/C++, Python, HTML/CSS, JavaScript, SQL, Git, AWS, React.js, Node.js</p>
+          {/* Projects */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-6">Projects</h3>
+            <div className="space-y-8">
+              {projects.map((project, index) => (
+                <div key={index} className="border-l-4 border-blue-500 pl-6">
+                  <h4 className="text-xl font-medium mb-2">{project.title}</h4>
+                  <p className="text-gray-600 mb-3">{project.description}</p>
+                  <ul className="list-disc list-inside text-gray-600 space-y-1">
+                    {project.features.map((feature, featureIndex) => (
+                      <li key={featureIndex}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Languages</h3>
-              <p className="text-gray-600">English, Hindi, Nepali, Urdu</p>
+          </div>
+
+          {/* Technical Skills */}
+          <div className="mb-8">
+            <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div>
+                <h4 className="font-medium mb-2">Languages:</h4>
+                <p className="text-gray-600">Java, C/C++, Python, HTML/CSS, JavaScript, SQL</p>
+              </div>
+              <div>
+                <h4 className="font-medium mb-2">Frameworks:</h4>
+                <p className="text-gray-600">React.js, Node.js, Flask, Junit, WordPress, Material-UI, FastAPI, Streamlit</p>
+              </div>
+              <div>
+                <h4 className="font-medium mb-2">Developer Tools:</h4>
+                <p className="text-gray-600">Git, Docker, TravisCI, Google Cloud Platform, PyCharm, Amazon Web Services, Power BI</p>
+              </div>
+              <div>
+                <h4 className="font-medium mb-2">Libraries:</h4>
+                <p className="text-gray-600">NumPy, Matplotlib, pandas</p>
+              </div>
             </div>
           </div>
         </div>
