@@ -58,7 +58,6 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
           <div className="max-w-4xl mx-auto text-lg text-gray-600 space-y-6">
             <p>
-              Hi, I'm Piyush Singh 👋
               
               I'm a junior Computer Science student at the University of Texas at Arlington, passionate about building meaningful tech products that solve real-world problems. With hands-on experience in full-stack development, AI/ML integration, and team-based project execution, I bring both technical skill and a product-minded perspective to the table.
             </p>
