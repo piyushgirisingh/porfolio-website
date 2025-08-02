@@ -56,12 +56,15 @@ const Index = () => {
       <section id="about" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
-          <div className="max-w-3xl mx-auto text-lg text-gray-600">
-            <p className="mb-6">
-              Computer Science student at the University of Texas at Arlington, looking forward to learning & applying tech skills with leadership experiences to automate daily tasks and contribute to the community.
+          <div className="max-w-4xl mx-auto text-lg text-gray-600 space-y-6">
+            <p>
+              Hi, I'm Piyush Singh 👋 I'm a junior Computer Science student at the University of Texas at Arlington, passionate about building meaningful tech products that solve real-world problems. With hands-on experience in full-stack development, AI/ML integration, and team-based project execution, I bring both technical skill and a product-minded perspective to the table.
             </p>
             <p>
-              Currently seeking internship positions for Summer 2025.
+              I've led and contributed to several projects—from emotional wellness apps to custom operating systems—where I focused not just on building, but on understanding users and creating intuitive, impactful experiences. I'm currently sharpening my skills in system design, cloud deployment, and product strategy, with the goal of growing into a product management or software engineering role.
+            </p>
+            <p>
+              When I'm not coding or collaborating with teammates, I'm probably exploring new tech trends, watching Arsenal matches, or mapping out my next travel adventure.
             </p>
           </div>
         </div>
